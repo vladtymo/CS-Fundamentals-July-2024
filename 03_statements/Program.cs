@@ -225,6 +225,14 @@
             numbers[i] = int.Parse(Console.ReadLine());
         }
 
+        // foreach - цикл автоматично перебирає елементи масива
+        // * немає можливості змінити елемент
+        // * немає доступу до індекса елемента
+        foreach (int n in numbers)
+        {
+            Console.WriteLine("Number: " + n);
+        }
+
         Console.WriteLine("Average: " + numbers.Average());
     }
 }
