@@ -234,5 +234,14 @@
         }
 
         Console.WriteLine("Average: " + numbers.Average());
+
+        string line = "Hello";
+        // рядок це фактично масив символів, тому його можна перебирати циклом
+        char[] symbols = { 'H', 'e', 'l', 'l', 'o' };
+
+        foreach (char s in line)
+        {
+            Console.WriteLine(s + "!");
+        }
     }
 }
