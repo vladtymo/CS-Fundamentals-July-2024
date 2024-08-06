@@ -6,8 +6,9 @@
         public const int CRASH_DETECTION_DIF = 30;
 
         private static Random random = new Random();
-        private float speed;
+        private float speed; // 100
 
+        // event - incapsulate delegate but [+=] [-=] operators
         public event Action<float> CrashEvent;
 
         public float Speed
@@ -73,7 +74,7 @@
 
             // [+=] - subscribe to the event
             myCar.CrashEvent += CrashAlert;
-            myCar.CrashEvent += (s) => CallPolice();
+            myCar.CrashEvent += (speed) => CallPolice();
             myCar.CrashEvent += YourCar_CrashEvent;
 
             // [-=] - unsubscribe from the event
@@ -87,7 +88,7 @@
             {
                 myCar.Gas();
 
-                if (i % 7 == 0) Crash(myCar);
+                if (i % 7 == 0) Crash(myCar); // crash event
             }
             Console.WriteLine(myCar);
 
@@ -101,7 +102,7 @@
 
         private static void YourCar_CrashEvent(float speed)
         {
-            File.AppendAllText("crash_logs.txt", $"Crash Detected: {DateTime.Now} - {speed} km/h");
+            File.AppendAllText("crash_logs.txt", $"Crash Detected: {DateTime.Now} - {speed} km/h\n");
         }
 
         static void CrashAlert(float speed)
