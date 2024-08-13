@@ -116,6 +116,15 @@ namespace _09_linq
                     Console.WriteLine('\t' + i.ToString());
                 }
             }
+
+            // -------------- lazy loading --------------
+            var result = numbers.Where(x => x > 100);
+            numbers[0] = 120;
+
+            result = result.OrderByDescending(x => x).ToList(); // implicit loading
+            numbers[1] = 999;
+
+            ShowCollection(result, "Filered"); // ...120...
         }
 
         static void ShowCollection<T>(IEnumerable<T> collection, string? title = null, bool lines = false)
