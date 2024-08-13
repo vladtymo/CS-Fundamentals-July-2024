@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_events", "09_events\09_e
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_linq", "11_linq\11_linq.csproj", "{70650E07-5C17-45CE-B8AE-5FA38E765D00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_regexp", "11_regexp\11_regexp.csproj", "{8CE6E398-ED42-4F3B-9D42-CFBC8F618DCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{70650E07-5C17-45CE-B8AE-5FA38E765D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70650E07-5C17-45CE-B8AE-5FA38E765D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70650E07-5C17-45CE-B8AE-5FA38E765D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE6E398-ED42-4F3B-9D42-CFBC8F618DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE6E398-ED42-4F3B-9D42-CFBC8F618DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE6E398-ED42-4F3B-9D42-CFBC8F618DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE6E398-ED42-4F3B-9D42-CFBC8F618DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
